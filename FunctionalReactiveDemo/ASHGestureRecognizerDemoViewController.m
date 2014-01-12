@@ -1,25 +1,19 @@
 //
-//  ASHMasterViewController.m
+//  ASHDetailViewController.m
 //  FunctionalReactiveDemo
 //
 //  Created by Ash Furrow on 1/12/2014.
 //  Copyright (c) 2014 Ash Furrow. All rights reserved.
 //
 
-#import "ASHMasterViewController.h"
-
 #import "ASHGestureRecognizerDemoViewController.h"
 
-@interface ASHMasterViewController ()
-
+@interface ASHGestureRecognizerDemoViewController ()
 @end
 
-@implementation ASHMasterViewController
+@implementation ASHGestureRecognizerDemoViewController
 
-- (void)awakeFromNib
-{
-    [super awakeFromNib];
-}
+#pragma mark - Managing the detail item
 
 - (void)viewDidLoad
 {

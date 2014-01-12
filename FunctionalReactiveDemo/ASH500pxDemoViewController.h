@@ -1,5 +1,5 @@
 //
-//  ASHMasterViewController.h
+//  ASH500pxDemoViewController.h
 //  FunctionalReactiveDemo
 //
 //  Created by Ash Furrow on 1/12/2014.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import <CoreData/CoreData.h>
-
-@interface ASHMasterViewController : UITableViewController <NSFetchedResultsControllerDelegate>
+@interface ASH500pxDemoViewController : UITableViewController
 
 @end
