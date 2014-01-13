@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		48FA2427C4BF412E8E6B57E2 /* libPods-FunctionalReactiveDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 817448C30E0742E08BA3B95B /* libPods-FunctionalReactiveDemo.a */; };
+		5EABB20D188497190026B5D9 /* ASHLoginDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EABB20C188497190026B5D9 /* ASHLoginDemoViewController.m */; };
 		5EBF4CCB188310490055BED4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBF4CCA188310490055BED4 /* Foundation.framework */; };
 		5EBF4CCD188310490055BED4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBF4CCC188310490055BED4 /* CoreGraphics.framework */; };
 		5EBF4CCF188310490055BED4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBF4CCE188310490055BED4 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5EABB20B188497190026B5D9 /* ASHLoginDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHLoginDemoViewController.h; sourceTree = "<group>"; };
+		5EABB20C188497190026B5D9 /* ASHLoginDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHLoginDemoViewController.m; sourceTree = "<group>"; };
 		5EBF4CC7188310490055BED4 /* FunctionalReactiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunctionalReactiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EBF4CCA188310490055BED4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5EBF4CCC188310490055BED4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -176,6 +179,8 @@
 				5EBF4CE5188310490055BED4 /* ASHMasterViewController.m */,
 				5EBF4CE7188310490055BED4 /* ASHGestureRecognizerDemoViewController.h */,
 				5EBF4CE8188310490055BED4 /* ASHGestureRecognizerDemoViewController.m */,
+				5EABB20B188497190026B5D9 /* ASHLoginDemoViewController.h */,
+				5EABB20C188497190026B5D9 /* ASHLoginDemoViewController.m */,
 				5EBF4D08188311880055BED4 /* ASH500pxDemoViewController.h */,
 				5EBF4D09188311880055BED4 /* ASH500pxDemoViewController.m */,
 			);
@@ -319,6 +324,7 @@
 				5EBF4CDD188310490055BED4 /* ASHAppDelegate.m in Sources */,
 				5EBF4D0A188311880055BED4 /* ASH500pxDemoViewController.m in Sources */,
 				5EBF4CE9188310490055BED4 /* ASHGestureRecognizerDemoViewController.m in Sources */,
+				5EABB20D188497190026B5D9 /* ASHLoginDemoViewController.m in Sources */,
 				5EBF4CE6188310490055BED4 /* ASHMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

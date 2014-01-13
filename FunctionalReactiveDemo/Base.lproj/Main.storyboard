@@ -51,8 +51,29 @@
                                             <segue destination="Ah7-4n-0Wa" kind="push" id="H35-IE-QDl"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="bpb-ME-LzF" style="IBUITableViewCellStyleDefault" id="sJ0-Yh-9dU">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="GwR-Ig-ayZ" style="IBUITableViewCellStyleDefault" id="vYF-1W-RQN">
                                         <rect key="frame" x="0.0" y="108" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vYF-1W-RQN" id="bHk-qd-1cL">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Login Demo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="GwR-Ig-ayZ">
+                                                    <rect key="frame" x="15" y="0.0" width="270" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="aNr-uj-N1C" kind="push" id="NpZ-oI-XEF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="bpb-ME-LzF" style="IBUITableViewCellStyleDefault" id="sJ0-Yh-9dU">
+                                        <rect key="frame" x="0.0" y="152" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sJ0-Yh-9dU" id="h7Z-eS-s0B">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -86,6 +107,25 @@
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="NGc-Ie-Wym">
+            <objects>
+                <viewController id="aNr-uj-N1C" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="927-3X-ToZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="oAX-vW-RFa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fnE-qJ-n47">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tJy-wd-KoA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="857-uj-wQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="64"/>
+        </scene>
         <!--Table View Controller-->
         <scene sceneID="cWQ-Uf-T28">
             <objects>
@@ -113,7 +153,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6Q-59-hZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1009" y="354"/>
+            <point key="canvasLocation" x="1009" y="862"/>
         </scene>
         <!--Gesture Recognizer Demo View Controller - Detail-->
         <scene sceneID="Cn3-H9-jdl">
@@ -142,7 +182,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1009" y="-315"/>
+            <point key="canvasLocation" x="1009" y="-667"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
