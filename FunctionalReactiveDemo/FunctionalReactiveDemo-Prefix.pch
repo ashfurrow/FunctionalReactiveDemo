@@ -11,7 +11,13 @@
 #endif
 
 #ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
-    #import <CoreData/CoreData.h>
+
+// Standard iOS nonsense
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
+
+// ReactiveCocoa
+#import <ReactiveCocoa/ReactiveCocoa.h>
+
 #endif

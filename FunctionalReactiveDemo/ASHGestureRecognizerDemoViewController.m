@@ -8,8 +8,6 @@
 
 #import "ASHGestureRecognizerDemoViewController.h"
 
-#import <ReactiveCocoa/ReactiveCocoa.h>
-
 @interface ASHGestureRecognizerDemoViewController ()
 
 @property (weak, nonatomic) IBOutlet UIView *boxView;
