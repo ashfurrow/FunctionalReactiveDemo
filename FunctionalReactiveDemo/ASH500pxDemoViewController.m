@@ -41,6 +41,7 @@
             return nil;
         }
     }] deliverOn:[RACScheduler mainThreadScheduler]] map:^id(NSDictionary *results) {
+        // For each photo in our dictionary, map it to a newly created ASHPhotoModel instance.
         NSArray *photosArray = [[[results[@"photos"] rac_sequence] map:^id(NSDictionary *photoDictionary) {
             ASHPhotoModel *model = [ASHPhotoModel new];
             
@@ -54,7 +55,7 @@
         return photosArray;
     }];
     
-    // Note that self needs to be weakified
+    // Note that self needs to be weakified to avoid a reference cycle in the subscribeNext: block
     __weak __typeof(self) weakSelf = self;
     [RACObserve(self, photosArray) subscribeNext:^(id x) {
         __typeof(weakSelf) self = weakSelf;
