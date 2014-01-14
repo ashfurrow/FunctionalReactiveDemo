@@ -27,6 +27,7 @@
 		5EBF4CFD188310490055BED4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EBF4CFB188310490055BED4 /* InfoPlist.strings */; };
 		5EBF4CFF188310490055BED4 /* FunctionalReactiveDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF4CFE188310490055BED4 /* FunctionalReactiveDemoTests.m */; };
 		5EBF4D0A188311880055BED4 /* ASH500pxDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF4D09188311880055BED4 /* ASH500pxDemoViewController.m */; };
+		5EBF4D0E1884BD840055BED4 /* ASHPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBF4D0D1884BD840055BED4 /* ASHPhotoModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		5EBF4CFE188310490055BED4 /* FunctionalReactiveDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FunctionalReactiveDemoTests.m; sourceTree = "<group>"; };
 		5EBF4D08188311880055BED4 /* ASH500pxDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASH500pxDemoViewController.h; sourceTree = "<group>"; };
 		5EBF4D09188311880055BED4 /* ASH500pxDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASH500pxDemoViewController.m; sourceTree = "<group>"; };
+		5EBF4D0C1884BD840055BED4 /* ASHPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHPhotoModel.h; sourceTree = "<group>"; };
+		5EBF4D0D1884BD840055BED4 /* ASHPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHPhotoModel.m; sourceTree = "<group>"; };
 		817448C30E0742E08BA3B95B /* libPods-FunctionalReactiveDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FunctionalReactiveDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9129A6E7FD144AC9919B270A /* Pods-FunctionalReactiveDemo.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FunctionalReactiveDemo.xcconfig"; path = "Pods/Pods-FunctionalReactiveDemo.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +139,7 @@
 				5EBF4CDB188310490055BED4 /* ASHAppDelegate.h */,
 				5EBF4CDC188310490055BED4 /* ASHAppDelegate.m */,
 				5EBF4CDE188310490055BED4 /* Main.storyboard */,
+				5EBF4D0F1884BDDB0055BED4 /* Models */,
 				5EBF4D0B188311940055BED4 /* View Controllers */,
 				5EBF4CEA188310490055BED4 /* Images.xcassets */,
 				5EBF4CD3188310490055BED4 /* Supporting Files */,
@@ -185,6 +189,15 @@
 				5EBF4D09188311880055BED4 /* ASH500pxDemoViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5EBF4D0F1884BDDB0055BED4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5EBF4D0C1884BD840055BED4 /* ASHPhotoModel.h */,
+				5EBF4D0D1884BD840055BED4 /* ASHPhotoModel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EBF4D0E1884BD840055BED4 /* ASHPhotoModel.m in Sources */,
 				5EBF4CD9188310490055BED4 /* main.m in Sources */,
 				5EBF4CDD188310490055BED4 /* ASHAppDelegate.m in Sources */,
 				5EBF4D0A188311880055BED4 /* ASH500pxDemoViewController.m in Sources */,
