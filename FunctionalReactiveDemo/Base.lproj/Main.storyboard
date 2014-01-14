@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="459" y="64"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Demo View Controller-->
         <scene sceneID="NGc-Ie-Wym">
             <objects>
-                <viewController id="aNr-uj-N1C" sceneMemberID="viewController">
+                <viewController id="aNr-uj-N1C" customClass="ASHLoginDemoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="927-3X-ToZ"/>
                         <viewControllerLayoutGuide type="bottom" id="oAX-vW-RFa"/>
@@ -118,9 +118,35 @@
                     <view key="view" contentMode="scaleToFill" id="fnE-qJ-n47">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v8k-yg-qdb">
+                                <rect key="frame" x="20" y="82" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2vP-ok-3fP">
+                                <rect key="frame" x="20" y="120" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8f-JX-IrT">
+                                <rect key="frame" x="20" y="158" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="tJy-wd-KoA"/>
+                    <connections>
+                        <outlet property="button" destination="e8f-JX-IrT" id="uRu-5K-Vaq"/>
+                        <outlet property="emailTextField" destination="v8k-yg-qdb" id="Ofb-XY-mMq"/>
+                        <outlet property="passwordTextField" destination="2vP-ok-3fP" id="LAI-yF-6ZB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="857-uj-wQa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
