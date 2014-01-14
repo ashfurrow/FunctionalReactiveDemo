@@ -33,7 +33,7 @@
     [super viewDidLoad];
     
     NSURLRequest *request = [ASH500pxDemoViewController popularURLRequest];
-    RAC(self, photosArray) = [[[[NSURLConnection rac_sendAsynchronousRequest:request] reduceEach:^id(NSHTTPURLResponse *response, NSData *data){
+    RAC(self, photosArray) = [[[[NSURLConnection rac_sendAsynchronousRequest:request] reduceEach:^id(NSHTTPURLResponse *response, NSData *data) {
         if (data && response.statusCode == 200) {
             id results = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
             return results;
