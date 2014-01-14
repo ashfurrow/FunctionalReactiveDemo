@@ -34,8 +34,12 @@
     
     NSURLRequest *request = [ASH500pxDemoViewController popularURLRequest];
     RAC(self, photosArray) = [[[[NSURLConnection rac_sendAsynchronousRequest:request] reduceEach:^id(NSHTTPURLResponse *response, NSData *data){
-        id results = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        return results;
+        if (data && response.statusCode == 200) {
+            id results = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+            return results;
+        } else {
+            return nil;
+        }
     }] deliverOn:[RACScheduler mainThreadScheduler]] map:^id(NSDictionary *results) {
         NSArray *photosArray = [[[results[@"photos"] rac_sequence] map:^id(NSDictionary *photoDictionary) {
             ASHPhotoModel *model = [ASHPhotoModel new];
