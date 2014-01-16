@@ -33,13 +33,41 @@
     [super viewDidLoad];
     
     NSURLRequest *request = [ASH500pxDemoViewController popularURLRequest];
-    RAC(self, photosArray) = [[[[NSURLConnection rac_sendAsynchronousRequest:request] reduceEach:^id(NSHTTPURLResponse *response, NSData *data) {
-        if (data && response.statusCode == 200) {
-            id results = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    
+    
+    
+    
+    
+    
+    
+    RAC(self, photosArray) = [[[[[[NSURLConnection rac_sendAsynchronousRequest:request] reduceEach:^id(NSHTTPURLResponse *response, NSData *data) {
+        if (response.statusCode == 200) {
+            return data;
+        } else {
+            return nil;
+        }
+        
+        
+        
+        
+        
+        
+        
+    }] tryMap:^id(NSData *data, NSError *__autoreleasing *errorPtr) {
+        
+        if (data) {
+            id results = [NSJSONSerialization JSONObjectWithData:data options:0 error:errorPtr];
             return results;
         } else {
             return nil;
         }
+        
+        
+        
+        
+        
+        
+        
     }] deliverOn:[RACScheduler mainThreadScheduler]] map:^id(NSDictionary *results) {
         // For each photo in our dictionary, map it to a newly created ASHPhotoModel instance.
         NSArray *photosArray = [[[results[@"photos"] rac_sequence] map:^id(NSDictionary *photoDictionary) {
@@ -53,7 +81,22 @@
         }] array];
         
         return photosArray;
+        
+        
+        
+        
+        
+        
+        
+        
+    }] catch:^RACSignal *(NSError *error) {
+        return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+            [[[UIAlertView alloc] initWithTitle:@"Couldn't Fetch" message:error.localizedDescription delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil] show];
+            
+            return nil;
+        }];
     }];
+
     
     // Note that self needs to be weakified to avoid a reference cycle in the subscribeNext: block
     __weak __typeof(self) weakSelf = self;
